@@ -2,13 +2,13 @@
 ## 常用python脚本
 1. Get Local Net 
 
-  获取本地上网IP地址信息
+    查询本地上网IP信息
 
-  用法：
+    用法：
 
-  ```python
-  python getLocalNet.py
-  ```
+    ```
+    python getLocalNet.py
+    ```
 
 2. check IP
 
