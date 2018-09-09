@@ -17,7 +17,7 @@ class PortScanner:
     _port_list_top_50 = portlist.port_list_top_50
     
     #默认的线程控制数
-    thread_limit = 500
+    thread_limit = 1000
 
     #默认等待时间限制
     delay_time = 10
@@ -69,7 +69,6 @@ class PortScanner:
             print('server IP is : {}'.format(server_ip))
         except socket.error:
             print('hostname {} unknown'.format(host_name))
-            self.show_usage()
             return {}
         
         start_time = time.time()
@@ -93,7 +92,7 @@ class PortScanner:
             )
         else:
             self.thread_limit = limit
-
+        
     def set_delay(self, delay):
         """
         设置结束等待连接的秒数
@@ -106,14 +105,14 @@ class PortScanner:
             )
         else:
             self.delay_time = delay
+        print ('Current timeout delay is {} seconds.'.format(self.delay_time))
     
-    @classmethod
-    def show_usage(cls):
+    def show_thread_limit(self):
         """
-        使用帮助
+        返回当前线程数
         """
-        print('Port Scanner v0.1')
-        print('please make sure the input host name is in the form of "something.com" or "http://something.com!"\n')
+        print('current thread number is {} '.format(self.thread_limit))
+        return self.thread_limit
     
     def show_target_ports(self):
         """
@@ -130,12 +129,13 @@ class PortScanner:
         print ('Current timeout delay is {} seconds.'.format(self.delay_time))
         return self.delay_time
 
-    def show_top_k_ports(self, k):
+    def show_top_ports(self, k):
         """
         返回top50,100,1000 常用的端口
         """
-        port_list = self.check_default_list(k)
-        print('Top {} commonly used ports:'.format(k))
+        port = int(k)
+        port_list = self.check_default_list(port)
+        print('Top {} commonly used ports:'.format(port))
         print(port_list)
         return port_list
 
