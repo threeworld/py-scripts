@@ -4,11 +4,11 @@
 
 运行命令`python main.py -h`
 
-![](/image/2.jpg)
+![](https://github.com/threeworld/Python/blob/master/Port%20Scanner/image/2.jpg?raw=true)
 
 运行命令`python main.py -d baidu.com -t 1200 -w 9 `
 
-![](/image/1.jpg)
+![](https://github.com/threeworld/Python/blob/master/Port%20Scanner/image/1.jpg?raw=true)
 
 ### 说明
 
@@ -27,7 +27,7 @@
 
 ### 文件结构
 
-```python
+```
 |---- etc
 	   |---- __init__.py
 	   |---- portlist.py
