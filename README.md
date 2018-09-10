@@ -30,6 +30,13 @@
     python zipcrack.py -f  file.zip -d password.txt
     ```
 
+4. Port Scanner
+
+    端口扫描
+
+5. Url Collector 
+
+    url采集器脚本
 
 
 
