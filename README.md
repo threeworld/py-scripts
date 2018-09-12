@@ -28,4 +28,6 @@
 
     中文验证码点选demo，调用腾讯云API
 
+    详情: https://cloud.tencent.com/document/product/866/17600
+
 不断更新
