@@ -24,4 +24,8 @@
 
     目录扫描
 
+7. point Selection
+
+    中文验证码点选demo，调用腾讯云API
+
 不断更新
