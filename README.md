@@ -30,4 +30,8 @@
 
     详情: https://cloud.tencent.com/document/product/866/17600
 
+8. Finger Recognition
+
+    指纹识别
+
 不断更新
